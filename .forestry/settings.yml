@@ -4,11 +4,11 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: config.toml
-  label: config
+- type: directory
+  path: archetypes
+  label: Archetypes
+  create: all
   match: "**/*"
-  read_only: true
 - type: directory
   path: content
   label: Pages
